@@ -3,43 +3,64 @@
 <head>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MNGZ3M8M3Q"></script>
     <script>
+        function requestQuote() {
+    window.location.href = "form.html"; // Redirects to the quote request form
+}
+
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-MNGZ3M8M3Q');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cocky Lawncare provides expert lawn care, landscaping, and maintenance services with a satisfaction guarantee.">
-    <meta name="keywords" content="lawncare, landscaping, sprinkler installation, lawn mowing, hedge maintenance">
-    <meta name="author" content="David Camp">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - Cocky Lawncare</title>
+    <link rel="stylesheet" href="cocky.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <img src="logo.png" alt="Cocky Lawncare Logo">
-    <h1>Cocky Lawncare</h1>
-    <h2>Services</h2>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Cocky Lawncare Logo" class="logo">
+            <h1>Cocky Lawncare</h1>
+        </div>
+    </header>
+
     <nav>
         <a href="index.html">Home</a> |
         <a href="services.html">Services</a> |
         <a href="form.html">Request a Quote</a>
     </nav>
-    <p><strong>We're COCKY that we'll get your lawn looking right!</strong></p>
-    
-    <h3>General Lawncare</h3>
-    <p>This is the option for you if you are just looking to have your yard looking great! Includes mowing, grass edging, and weed control!</p>
-    
-    <h3>Hedge Maintenance</h3>
-    <p>Want to get those hedges looking beautiful for everyone to see? This is the option for you! This service includes maintenance on designated hedges.</p>
-    
-    <h3>Sprinkler Installation</h3>
-    <p>Want to take your lawn to the next level? Have our team install sprinklers in your yard! Inquire a quote for more details.</p>
-    
-    <h3>Stump Removal</h3>
-    <p>Looking to get rid of pesky stumps that make your yard look worse? This service includes the removal of stumps and roots, and also includes leveling after removal.</p>
-    
-    <button onclick="location.href='form.html'">Request a Free Quote NOW!</button>
+
+    <p class="slogan">We're COCKY that we'll get your lawn looking right!</p>
+
+    <div class="services-list">
+        <div class="service-item">
+            <img src="mower.png" alt="Lawn Mowing">
+            <h3>General Lawncare</h3>
+            <p>Includes mowing, grass edging, and weed control.</p>
+        </div>
+        <div class="service-item">
+            <img src="hedge.png" alt="Hedge Trimming">
+            <h3>Hedge Maintenance</h3>
+            <p>Get your hedges looking beautiful!</p>
+        </div>
+        <div class="service-item">
+            <img src="sprinkler.png" alt="Sprinkler Installation">
+            <h3>Sprinkler Installation</h3>
+            <p>Take your lawn to the next level with our team!</p>
+        </div>
+        <div class="service-item">
+            <img src="stump.png" alt="Stump Removal">
+            <h3>Stump Removal</h3>
+            <p>Get rid of pesky stumps and level your yard!</p>
+        </div>
+    </div>
+
+    <button onclick="requestQuote()">Request a Free Quote NOW!</button>
+
+    <footer>
+        &copy; 2025 Cocky Lawncare. All Rights Reserved.
+    </footer>
 </body>
 </html>

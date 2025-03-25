@@ -6,28 +6,29 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-MNGZ3M8M3Q');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cocky Lawncare provides expert lawn care, landscaping, and maintenance services with a satisfaction guarantee.">
-    <meta name="keywords" content="lawncare, landscaping, sprinkler installation, lawn mowing, hedge maintenance, form, contact us, free quote">
-    <meta name="author" content="David Camp">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Request a Quote - Cocky Lawncare</title>
+    <link rel="stylesheet" href="cocky.css">
 </head>
 <body>
-    <img src="logo.png" alt="Cocky Lawncare Logo">
-    <h1>Cocky Lawncare</h1>
-    <h2>Request a Quote</h2>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Cocky Lawncare Logo" class="logo">
+            <h1>Cocky Lawncare</h1>
+        </div>
+    </header>
+
     <nav>
         <a href="index.html">Home</a> |
         <a href="services.html">Services</a> |
         <a href="form.html">Request a Quote</a>
     </nav>
-    <p><strong>We're COCKY that we'll get your lawn looking right!</strong></p>
-    
+
+    <p class="slogan">We're COCKY that we'll get your lawn looking right!</p>
+
     <form action="index.html" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br>
@@ -43,5 +44,9 @@
         
         <input type="submit" value="Submit">
     </form>
+
+    <footer>
+        &copy; 2025 Cocky Lawncare. All Rights Reserved.
+    </footer>
 </body>
 </html>
