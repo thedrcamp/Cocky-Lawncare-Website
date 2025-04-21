@@ -58,6 +58,24 @@ nav a:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+.button {
+    background-color: #228B22;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 12px 24px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background-color: #1e7a1e;
+}
+
 .about-services {
     display: flex;
     justify-content: center;
