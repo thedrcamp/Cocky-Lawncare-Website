@@ -29,7 +29,7 @@ const services = [
   
     slide.innerHTML = `
       <img src="${service.image}" alt="${service.title}">
-      <h3>${service.title}</h3>
+      <h2>${service.title}</h2>
       <p>${service.description}</p>
     `;
   }
