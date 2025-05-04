@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Cocky Lawncare</title>
+    <link rel="stylesheet" href="cocky.css">
+    <link rel="icon" href="logo.png" type="image/png">
+    <script src="services.js" defer></script>
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MNGZ3M8M3Q"></script>
     <script>
-        function requestQuote() {
-    window.location.href = "form.html"; // Redirects to the quote request form
-}
-
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-MNGZ3M8M3Q');
     </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Cocky Lawncare</title>
-    <link rel="stylesheet" href="cocky.css">
-    <script src="script.js" defer></script>
+        <script src="services.js" defer></script>
 </head>
 <body>
     <header>
@@ -34,33 +34,23 @@
 
     <p class="slogan">We're COCKY that we'll get your lawn looking right!</p>
 
-    <div class="services-list">
-        <div class="service-item">
-            <img src="mower.png" alt="Lawn Mowing">
-            <h3>General Lawncare</h3>
-            <p>Includes mowing, grass edging, and weed control.</p>
+    <div class="slider-container">
+        <button class="arrow" onclick="prevService()">&#8592;</button>
+
+        <div class="service-slide" id="service-slide">
+            <!-- JavaScript will populate this -->
         </div>
-        <div class="service-item">
-            <img src="hedge.png" alt="Hedge Trimming">
-            <h3>Hedge Maintenance</h3>
-            <p>Get your hedges looking beautiful!</p>
-        </div>
-        <div class="service-item">
-            <img src="sprinkler.png" alt="Sprinkler Installation">
-            <h3>Sprinkler Installation</h3>
-            <p>Take your lawn to the next level with our team!</p>
-        </div>
-        <div class="service-item">
-            <img src="stump.png" alt="Stump Removal">
-            <h3>Stump Removal</h3>
-            <p>Get rid of pesky stumps and level your yard!</p>
-        </div>
+
+        <button class="arrow" onclick="nextService()">&#8594;</button>
     </div>
 
-    <button class="button" onclick="requestQuote()">Request a Free Quote NOW!</button>
+    <button class="button" onclick="window.location.href='form.html'">Request a Free Quote NOW!</button>
 
     <footer>
         &copy; 2025 Cocky Lawncare. All Rights Reserved.
+        <br>
+        <a href="https://www.instagram.com" target="_blank"><img src="instagram.jpg" alt="Instagram" width="24"></a>
+        <a href="https://www.twitter.com" target="_blank"><img src="x.jpg" alt="X (Twitter)" width="24"></a>
     </footer>
 </body>
 </html>

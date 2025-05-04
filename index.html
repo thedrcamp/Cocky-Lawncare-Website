@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Cocky Lawncare</title>
     <link rel="stylesheet" href="cocky.css">
+    <link rel="icon" href="logo.png" type="image/png">
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MNGZ3M8M3Q"></script>
     <script>
-        function requestQuote() {
-    window.location.href = "form.html";
-}
-
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-MNGZ3M8M3Q');
     </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Cocky Lawncare</title>
-    <link rel="stylesheet" href="cocky.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -41,16 +38,18 @@
             <p>In 2025 we started our company, Cocky Lawncare Services, as a way to connect with the community. Ever since our founding, we have hundreds of satisfied customers that are consistently serviced and are willing to give testament to the quality of service we provide. The company was founded for the sole reason of making sure the people of Columbia were consistently happy with the lawns they came home to everyday, where family memories could be made around the yard. We pride ourselves in the quality of our work, where we are “Cocky” about the quality of our work, so much so, that we have a satisfaction guarantee. We promise to give your families and businesses the beautiful lawn they deserve.</p>
         </div>
         <div class="services">
-            <h3>Services</h3>
+            <h3>What We Do</h3>
             <p>We strive to make your yard the most beautiful it can possibly be. With our satisfaction GUARANTEE, we promise to leave you more satisfied than any of our competitors. Whether you need a sprinkler system installed, basic lawncare, or anything in between done, we will be the company that can best serve your needs.</p>
         </div>
     </div>
 
-    <button class="button" onclick="requestQuote()">Submit a request today!</button>
-    
-    
+    <button class="button" onclick="window.location.href='services.html'">Check out the Services we offer!</button>
+
     <footer>
         &copy; 2025 Cocky Lawncare. All Rights Reserved.
+        <br>
+        <a href="https://www.instagram.com" target="_blank"><img src="instagram.jpg" alt="Instagram" width="24"></a>
+        <a href="https://www.twitter.com" target="_blank"><img src="x.jpg" alt="X (Twitter)" width="24"></a>
     </footer>
 </body>
 </html>

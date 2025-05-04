@@ -31,7 +31,7 @@ header {
 }
 
 nav {
-    background-color: #2E8B57;
+    background-color: #D2B48C;
     padding: 10px 0;
 }
 
@@ -44,6 +44,7 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+    scale: 1.05;
 }
 
 .slogan {
@@ -56,24 +57,6 @@ nav a:hover {
     max-width: 80%;
     margin: 20px auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-.button {
-    background-color: #228B22;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 12px 24px;
-    font-size: 1.1em;
-    border: none;
-    border-radius: 5px;
-    margin: 20px auto;
-    display: block;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-.button:hover {
-    background-color: #1e7a1e;
 }
 
 .about-services {
@@ -96,7 +79,7 @@ nav a:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.services-list {
+.services-gallery {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -104,7 +87,7 @@ nav a:hover {
     padding: 20px;
 }
 
-.service-item {
+.gallery-item {
     background: rgba(255, 255, 255, 0.9);
     padding: 15px;
     border-radius: 10px;
@@ -113,9 +96,10 @@ nav a:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.service-item img {
-    width: 50px;
+.gallery-item img {
+    width: 80px;
     height: auto;
+    margin-bottom: 10px;
 }
 
 form {
@@ -135,15 +119,25 @@ input, textarea {
     border-radius: 5px;
 }
 
-input[type="submit"] {
-    background-color: #228B22;
+input[type="submit"], .button {
+    background-color: #D2B48C;
     color: white;
     font-weight: bold;
     cursor: pointer;
+    padding: 12px 24px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
 
-input[type="submit"]:hover {
-    background-color: #1e7a1e;
+input[type="submit"]:hover, .button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
 }
 
 footer {
@@ -155,4 +149,49 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
+}
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    gap: 20px;
+}
+
+.service-slide {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.service-slide img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.arrow {
+    font-size: 2em;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #228B22;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    text-align: center;
+    cursor: pointer;
+    color: #228B22;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.arrow:hover {
+    background-color: #228B22;
+    color: white;
+    border-color: black;
+    transform: scale(1.1);
 }
